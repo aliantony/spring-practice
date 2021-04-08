@@ -2,3 +2,10 @@ server:
   port: 8080
   servlet:
     context-path: /
+spring:
+  task:
+    scheduling:
+      thread-name-prefix: my-schedule-tasking
+    execution:
+      pool:
+        core-size: 40
