@@ -18,7 +18,7 @@ public class AsynEventConfig {
     /**
      * 用主线程同步执行事件监听
      */
-    @Bean
+    //@Bean
     public SyncTaskExecutor syncTaskExecutor() {
         return new SyncTaskExecutor();
     }

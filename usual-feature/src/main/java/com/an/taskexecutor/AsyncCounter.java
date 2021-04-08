@@ -1,9 +1,7 @@
 package com.an.taskexecutor;
 
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.stereotype.Component;
 
-@Component
 public class AsyncCounter {
 
   private int counter = 0;

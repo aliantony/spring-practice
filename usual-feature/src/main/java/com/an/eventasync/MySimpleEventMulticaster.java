@@ -1,12 +1,10 @@
 package com.an.eventasync;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.SimpleApplicationEventMulticaster;
 import org.springframework.core.ResolvableType;
 import org.springframework.lang.Nullable;
-import org.springframework.stereotype.Component;
 
 import java.util.Iterator;
 import java.util.concurrent.Executor;
@@ -19,13 +17,13 @@ import java.util.concurrent.Executor;
  * @version  1.0.0
  */
 
-@Component("applicationEventMulticaster")
+//@Component("applicationEventMulticaster")
 public class MySimpleEventMulticaster extends SimpleApplicationEventMulticaster {
 
-    @Autowired
+    //@Autowired
     private Executor syncTaskExecutor;
 
-    @Autowired
+    //@Autowired
     private Executor asyncTaskExecutor;
 
     @Override
